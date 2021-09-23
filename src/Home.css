@@ -1,0 +1,202 @@
+.carousel-indicators [data-bs-target] {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.welcome {
+    padding: 20px;
+    text-align: center;
+    background: rgba(217, 245, 233, 1);
+}
+.welcome .title {
+    font-size: 78px;
+    color: #1E1A79;
+    font-family: "bold";
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.welcome .description {
+    color: #036439;
+    font-size: 48px;
+    max-width: 80%;
+    margin: auto;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 50px;
+    background: #F5F2F2;
+}
+.about > div {
+    margin: 0 30px;
+}
+.about .text {
+    position: relative;
+    z-index: 2;
+}
+.about .text::before {
+    content: "";
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background: rgba(217, 245, 233, 0.3);
+    z-index: -1;
+}
+.about .text .title {
+    font-size: 65px;
+    color: #1E1A79;
+    text-align: center;
+    font-family: "bold";
+    text-transform: capitalize;
+}
+.about .text .description {
+    font-size: 48px;
+    color: #036439;
+}
+.about .img {
+    position: relative;
+}
+.about .img img {
+    position: relative;
+    top: -40px;
+    right: 40px;
+    z-index: 2;
+}
+#overlay {
+    border: solid 5px #1E1A79;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.about-2 {
+    background: #FAF8F8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 50px;
+    position: relative;
+}
+.about-2 .text {
+    position: absolute;
+    font-size: 30px;
+    color: #036439;
+    right: 70px;
+    max-width: 40%;
+    background: #fff;
+    padding: 20px;
+}
+
+.contact {
+    background: #759AA3;
+    display: flex;
+    padding: 50px 70px;
+}
+.contact > div {
+    margin: 0 30px;
+}
+.contact .title {
+    font-size: 75px;
+    color: #1E1A79;
+    text-transform: capitalize;
+    font-family: "ex-bold";
+}
+.contact input,
+.contact textarea {
+    color: #fff;
+    border: none;
+    border-bottom: solid 2px #fff;
+    background: none;
+    outline: none;
+    font-size: 55px;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #fff;
+
+}
+.form-control:focus {
+    background: none;
+}
+#theinfo ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+    font-size: 55px;
+    font-family: "bold";
+}
+#theinfo ul span {
+    color: #1E1A79;
+    text-transform: capitalize;
+}
+@media (max-width: 1200px) {
+    .carousel img {
+        height: 50vh;
+        object-fit: cover;
+    }
+    .carousel-indicators [data-bs-target] {
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
+    .welcome .title {
+        font-size: 40px;
+    }
+    .welcome .description {
+        font-size: 30px;
+        max-width: 90%;
+    }
+    .about {
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+    .about .text .title {
+        font-size: 40px;
+    }
+    .about .text .description {
+        font-size: 30px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .about .img img {
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+    .about-2 {
+        flex-direction: column-reverse;
+    }
+    .about-2 img {
+        width: 100%;
+    }
+    .about-2 .text {
+        position: relative;
+        max-width: 100%;
+        right: 0;
+    }
+    .contact {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+    .contact > div {
+        margin: 30px 0;
+    }
+    .contact .title {
+        font-size: 40px;
+    }
+    .contact input,
+    .contact textarea {
+        font-size: 25px;
+    }
+    #theinfo ul {
+        font-size: 25px;
+    }
+}
