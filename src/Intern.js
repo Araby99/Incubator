@@ -2,6 +2,7 @@ import './Intern.css';
 import { interdata } from './interndata';
 import { Carousel } from 'react-bootstrap';
 import { useState } from 'react';
+import galley_img from "./assets/silicon-valley-quiz.png";
 
 
 
@@ -29,14 +30,14 @@ function Intern() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./assets/silicon-valley-quiz.png"
+                        src={galley_img}
                         alt="First slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./assets/silicon-valley-quiz.png"
+                        src={galley_img}
                         alt="Second slide"
                     />
 
@@ -44,7 +45,7 @@ function Intern() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./assets/silicon-valley-quiz.png"
+                        src={galley_img}
                         alt="Third slide"
                     />
                 </Carousel.Item>
