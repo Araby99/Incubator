@@ -42,7 +42,7 @@ nav .links li:nth-last-child(1):after {
         align-items: flex-start;
         overflow: hidden;
         transition: .5s;
-        height: 156px;
+        height: 100px;
     }
     nav .links {
         width: 100%;
@@ -75,5 +75,8 @@ nav .links li:nth-last-child(1):after {
         height: 3px;
         width: 30px;
         background: #000;
+    }
+    nav .logo img {
+        height: 100px;
     }
 }

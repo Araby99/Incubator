@@ -1,6 +1,5 @@
 import { Route, Switch } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap';
 import './index.css';
 import Nav from './Nav';
 import Home from './Home';
