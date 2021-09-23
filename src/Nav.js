@@ -6,10 +6,10 @@ const Nav = () => {
     let menu = false;
     function nav() {
         if (menu == false) {
-            document.getElementById("nav").style.height = "450px";
+            document.getElementById("nav").style.height = "400px";
             menu = true;
         } else if (menu == true) {
-            document.getElementById("nav").style.height = "156px";
+            document.getElementById("nav").style.height = "100px";
             menu = false;
         }
     }
