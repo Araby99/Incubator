@@ -1,9 +1,10 @@
 import './footer.css';
+import footer from "./assets/footer.png";
 
 function Footer() {
     return (
         <div className="footer">
-            <img src="assets/footer.png" alt="Footer" />
+            <img src={footer} alt="Footer" />
         </div>
     )
 }

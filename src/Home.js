@@ -1,6 +1,9 @@
 import './Home.css';
 import { infodata } from './infodata';
 import { Carousel } from 'react-bootstrap';
+import galley_img from "./assets/silicon-valley-quiz.png";
+import about1 from "./assets/about.png";
+import about2 from "./assets/about-2.png";
 
 
 function Home() {
@@ -10,14 +13,14 @@ function Home() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./assets/silicon-valley-quiz.png"
+                        src={galley_img}
                         alt="First slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./assets/silicon-valley-quiz.png"
+                        src={galley_img}
                         alt="Second slide"
                     />
 
@@ -25,7 +28,7 @@ function Home() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="./assets/silicon-valley-quiz.png"
+                        src={galley_img}
                         alt="Third slide"
                     />
                 </Carousel.Item>
@@ -47,13 +50,13 @@ function Home() {
                     </p>
                 </div>
                 <div className="img">
-                    <img src="assets/about.png" alt="Team" id="about_img" />
+                    <img src={about1} alt="Team" id="about_img" />
                     <div id="overlay"></div>
                 </div>
             </div>
             <div className="about-2">
                 <div className="img">
-                    <img src="assets/about-2.png" alt="Team" />
+                    <img src={about2} alt="Team" />
                 </div>
                 <div className="text">
                     <p>

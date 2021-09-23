@@ -1,5 +1,6 @@
 import './nav.css';
 import { BrowserRouter, Link } from 'react-router-dom';
+import logo from './assets/logo.png'
 
 const Nav = () => {
     let menu = false;
@@ -15,7 +16,7 @@ const Nav = () => {
     return (
         <nav id="nav">
             <div className="logo">
-                <img src="assets/logo.png" alt="Logo" />
+                <img src={logo} alt="Logo" />
                 <div className="bars" onClick={nav}>
                     <div className="bar"></div>
                     <div className="bar"></div>
