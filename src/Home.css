@@ -199,4 +199,8 @@
     #theinfo ul {
         font-size: 25px;
     }
+    .about .text::before {
+        height: 250px;
+        width: 250px;
+    }
 }
